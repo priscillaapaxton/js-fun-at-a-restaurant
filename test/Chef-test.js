@@ -9,8 +9,10 @@ var {
 
 describe("Chef (class)", function() {
   it.skip('should instantiate a chef object', function () {
+    // setup for test (if necessary)
     var hannah = new Chef("Hannah");
 
+    // assert what the result SHOULD be
     assert.instanceOf(hannah, Chef);
   });
 
@@ -26,10 +28,13 @@ describe("Chef (class)", function() {
     assert.equal(chef.name, "Casey");
   });
 
+  // setup for test (if necessary)
   it.skip("should work at a restaurant", function() {
     var restaurant = createRestaurant("Best Bakery Ever");
     var chef = new Chef("Hannah", restaurant);
+   // execute function
 
+   // assert what the result SHOULD be
     assert.equal(chef.name, "Hannah");
     assert.deepEqual(chef.restaurant, restaurant);
   });
