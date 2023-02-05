@@ -16,13 +16,13 @@ function createMenuItem(name, price, type) {
 function addIngredients(newIngredients, ingredients) {
   var hasIngredients = false
   for (var i = 0; i < ingredients.length; i++) {
-   if (newIngredients === ingredients[i]) {
+    if (newIngredients === ingredients[i]) {
       hasIngredients = true
-   } 
+    } 
   }
   if (hasIngredients === false) {
-  ingredients.push(newIngredients)
-}
+    ingredients.push(newIngredients)
+  }
   return ingredients;
 }
 
