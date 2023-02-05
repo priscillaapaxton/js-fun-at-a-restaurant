@@ -28,34 +28,16 @@ function listItems(deliveryOrders){
 }
 
 function searchOrder(deliveryOrders, food) {
-  var isOnList = false
+  // var isOnList = false
   for (var i = 0; i < deliveryOrders.length; i++) {
     if (deliveryOrders[i].item === food) {
-      isOnList = true
+      // isOnList = true
+      return true
     }
   }
-  return isOnList
+  return false
+  // return isOnList
 }
-
-
-
-// function addIngredients(newIngredients, ingredients) {
-//   var hasIngredients = false
-//   for (var i = 0; i < ingredients.length; i++) {
-//    if (newIngredients === ingredients[i]) {
-//       hasIngredients = true
-//    } 
-//   }
-//   if (hasIngredients === false) {
-//   ingredients.push(newIngredients)
-// }
-//   return ingredients;
-// }
-
-
-
-
-
 
 
 module.exports = {
